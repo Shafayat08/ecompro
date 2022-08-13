@@ -24,7 +24,7 @@ use App\Http\Controllers\Frontend\FrontendController;
 Route::get('/',[FrontendController::class, 'index']);
 Route::get('/catagory', [FrontendController::class, 'catagory']);
 Route::get('/view-catagory/{slug}',[FrontendController::class, 'viewcatagory']);
-
+Route::get('/catagory/{cate_slug}/{prod_slug}',[FrontendController::class, 'productview']);
 
 Auth::routes();
 
